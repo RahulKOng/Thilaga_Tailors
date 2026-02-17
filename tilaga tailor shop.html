@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Ladies Tailor in Namakkal | Thilaga Tailor Shop</title>
+    <meta name="description"
+        content="Expert bridal blouse stitching and women's tailoring in Namakkal. 30+ years of experience. Perfect fit, elegant designs, and on-time delivery.">
+
+    <style>
+        :root {
+            --primary-color: #800000;
+            /* Deep Maroon */
+            --primary-dark: #5a0000;
+            --secondary-color: #fffafb;
+            --gold-accent: #d4af37;
+            --text-dark: #2c2c2c;
+            --text-light: #fff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #fff;
+            padding-top: 70px;
+            /* Space for fixed navbar */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 15px;
+        }
+
+        /* SVG Icon Utilities */
+        .icon {
+            width: 20px;
+            height: 20px;
+            fill: currentColor;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin: 10px 5px;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-size: 1rem;
+        }
+
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebc57;
+            transform: translateY(-2px);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        /* Navbar */
+        .navbar {
+            background: white;
+            box-shadow: var(--shadow);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            height: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            font-family: Georgia, serif;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            /* CSS Only Pattern - Deep Maroon Gradient with subtle texture */
+            background:
+                radial-gradient(circle at 10% 20%, rgba(212, 175, 55, 0.1) 0%, transparent 20%),
+                radial-gradient(circle at 90% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 20%),
+                linear-gradient(135deg, #4a0000 0%, #800000 100%);
+            color: white;
+            padding: 120px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            /* Abstract curve */
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: white;
+            border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+            transform: scaleX(1.5);
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 3rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+            opacity: 0.9;
+        }
+
+        .urgency {
+            background: rgba(255, 255, 255, 0.1);
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        /* About Section */
+        .about-section {
+            padding: 80px 0;
+            background-color: var(--secondary-color);
+        }
+
+        .about-content {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-badge {
+            background: var(--primary-color);
+            color: white;
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            box-shadow: var(--shadow);
+        }
+
+        .experience-box {
+            background: white;
+            padding: 30px;
+            border-left: 5px solid var(--gold-accent);
+            box-shadow: var(--shadow);
+            margin-top: 30px;
+        }
+
+        /* Services */
+        .services {
+            padding: 80px 0;
+        }
+
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .service-card {
+            padding: 40px 30px;
+            border: 1px solid #eee;
+            border-radius: 15px;
+            transition: 0.3s;
+            text-align: center;
+            background: white;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            border-color: var(--gold-accent);
+        }
+
+        .service-icon {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        /* Why Choose Us */
+        .why-us {
+            background: var(--primary-color);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+        }
+
+        .why-us h2 {
+            color: white;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .why-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        .why-icon {
+            margin-bottom: 15px;
+            color: var(--gold-accent);
+            font-size: 20px;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: #fff;
+            text-align: center;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .testimonial-box {
+            padding: 30px;
+            background: var(--secondary-color);
+            border-radius: 10px;
+            text-align: left;
+            position: relative;
+        }
+
+        .quote-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            fill: var(--primary-color);
+            opacity: 0.1;
+        }
+
+        /* Footer */
+        footer {
+            background: #1a1a1a;
+            color: #ccc;
+            padding: 60px 0 20px;
+            text-align: center;
+        }
+
+        footer h3 {
+            color: white;
+        }
+
+        footer p {
+            margin-bottom: 10px;
+        }
+
+        .copyright {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #333;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            /* Simplified mobile handling */
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .about-content {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                margin: 5px 0;
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "Thilaga Tailor Shop",
+      "telephone": "+91-9751399178",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Near Main Road",
+        "addressLocality": "Namakkal",
+        "addressRegion": "TN",
+        "postalCode": "637001",
+        "addressCountry": "IN"
+      }
+    }
+    </script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <svg class="icon" style="width:24px;height:24px;margin-right:10px;" viewBox="0 0 24 24">
+                    <path
+                        d="M20.6 15c-.4-.4-1-.4-1.4 0l-2.4 2.4-5-5-2.2 2.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l1.4-1.4 4.1 4.1c-.8 1-2 1.7-3.4 1.7-2.6 0-4.6-2.1-4.6-4.9 0-2.4 1.7-4.4 4-4.8V9c-3.1.5-5.5 3.3-5.5 6.5C7 19.1 9.9 22 13.5 22c1.9 0 3.6-.8 4.7-2l3.8-3.6c.4-.4.4-1 0-1.4zM16 2l-4 4 2.3 2.3 4-4L16 2z" />
+                </svg>
+                Thilaga Tailors
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="alert('Menu clicked (Mobile menu to be implemented)')">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="container">
+            <h1>Perfect Fit. Elegant Style. <br>Trusted Ladies Tailor in Namakkal.</h1>
+            <p>Expert blouse stitching, bridal tailoring & custom women’s wear designed to fit your unique personality.
+            </p>
+            <div>
+                <a href="https://wa.me/919751399178" class="btn btn-whatsapp">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Book on WhatsApp
+                </a>
+                <a href="tel:+919751399178" class="btn btn-outline" style="color:white; border-color:white;">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path
+                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                    </svg>
+                    Call Now
+                </a>
+            </div>
+            <p class="urgency">✨ Festive bookings open! Limited slots available.</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="about-badge">EST. 1994</span>
+                    <h2>30+ Years of Excellence in Ladies Tailoring</h2>
+                    <p>At Thilaga Tailor Shop, we believe that every fabric has a story, and every stitch should count.
+                        With over three decades of experience, we have mastered the art of creating the perfect fit for
+                        women of all ages.</p>
+                    <div class="experience-box">
+                        <p style="font-size: 1.1rem; font-style: italic; color: #555;">
+                            "We don't just stitch clothes; we craft confidence. Whether it's a simple alteration or your
+                            dream bridal blouse, we bring 30 years of expertise to every single thread."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 style="text-align: center;">Our Specialized Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <svg class="icon service-icon" style="width:40px;height:40px;" viewBox="0 0 24 24">
+                        <path
+                            d="M20.6 15c-.4-.4-1-.4-1.4 0l-2.4 2.4-5-5-2.2 2.2c-.4.4-.4 1 0 1.4s1 .4 1.4 0l1.4-1.4 4.1 4.1c-.8 1-2 1.7-3.4 1.7-2.6 0-4.6-2.1-4.6-4.9 0-2.4 1.7-4.4 4-4.8V9c-3.1.5-5.5 3.3-5.5 6.5C7 19.1 9.9 22 13.5 22c1.9 0 3.6-.8 4.7-2l3.8-3.6c.4-.4.4-1 0-1.4zM16 2l-4 4 2.3 2.3 4-4L16 2z" />
+                    </svg>
+                    <h3>Bridal Blouse Designing</h3>
+                    <p>Specializing in Aari work, stone work, and heavy embroidery for your big day.</p>
+                </div>
+                <div class="service-card">
+                    <svg class="icon service-icon" style="width:40px;height:40px;" viewBox="0 0 24 24">
+                        <path
+                            d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+                    </svg>
+                    <h3>Custom Saree Blouse</h3>
+                    <p>Princess cut, katori, or designer back necks—we ensure a zero-gap perfect fit.</p>
+                </div>
+                <div class="service-card">
+                    <svg class="icon service-icon" style="width:40px;height:40px;" viewBox="0 0 24 24">
+                        <path
+                            d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+                    </svg>
+                    <h3>Salwar & Suits</h3>
+                    <p>Trendy and comfortable Salwar Kameez, Anarkalis, and Patiala suits tailored perfection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-us">
+        <div class="container">
+            <h2>Why Women Love Thilaga Tailors</h2>
+            <div class="why-grid">
+                <div class="why-item">
+                    <div class="why-icon">✔</div>
+                    <strong>Perfect Fitting Guarantee</strong>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✔</div>
+                    <strong>30+ Years Experience</strong>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✔</div>
+                    <strong>On-Time Delivery</strong>
+                </div>
+                <div class="why-item">
+                    <div class="why-icon">✔</div>
+                    <strong>Modern Designs</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2>What Our Happy Clients Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-box">
+                    <svg class="quote-icon" viewBox="0 0 24 24">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                    </svg>
+                    <p>"I was worried about my wedding blouse, but Thilaga Tailors did an amazing job with the
+                        embroidery. Best bridal tailor in Namakkal!"</p>
+                    <p style="margin-top:15px; font-weight:bold; color:var(--primary-color);">- Priya S.</p>
+                </div>
+                <div class="testimonial-box">
+                    <svg class="quote-icon" viewBox="0 0 24 24">
+                        <path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z" />
+                    </svg>
+                    <p>"Finally found a tailor who understands fitting. My office wear salwars fit perfectly now. Highly
+                        recommended."</p>
+                    <p style="margin-top:15px; font-weight:bold; color:var(--primary-color);">- Anitha R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer/Contact -->
+    <footer id="contact">
+        <div class="container">
+            <h3>Thilaga Tailor Shop</h3>
+            <p>Near Dr. Chitra clinic, Andavar petrol bunk, Trichy road, Namakkal, Tamil Nadu - 637001</p>
+            <p style="display:flex; justify-content:center; align-items:center; gap:10px;">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                </svg>
+                +91 97513 99178
+            </p>
+            <div style="margin-top: 30px; border-radius:10px; overflow:hidden; box-shadow: var(--shadow);">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3730.25849717539!2d78.1787071748247!3d11.208795988967482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babcf54f93be7d1%3A0x7df7f77b54240a13!2sThilaga%20tailor%20shop!5e1!3m2!1sen!2sin!4v1771074595306!5m2!1sen!2sin"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2024 Thilaga Tailor Shop. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Force scroll to top on load
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.onload = function () {
+            window.scrollTo(0, 0);
+        };
+    </script>
+</body>
+
+</html>
